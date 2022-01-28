@@ -1,5 +1,6 @@
 #include <iostream>
 #include <algorithm>
+
 using namespace std;
 using ll = long long;
 
@@ -23,7 +24,7 @@ int main() {
 
     for (ll i = 0; i < n; i++) {
         for (ll j = 0; j < n; j++) {
-            if(a[i] <= b[j]){
+            if (a[i] <= b[j]) {
                 f[i]++;
             }
         }

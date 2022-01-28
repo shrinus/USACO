@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 int main() {
@@ -14,12 +15,11 @@ int main() {
     int m = arr[0];
     int n = 0;
 
-    for (int i : arr) {
+    for (int i: arr) {
         if (i <= m) {
             m = i;
             n++;
-        }
-        else {
+        } else {
             m = i;
         }
     }

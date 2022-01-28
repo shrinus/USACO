@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 int main() {
@@ -15,21 +16,18 @@ int main() {
     int evens = n - odds;
 
     int addmore = 0;
-    if(odds > evens) {
+    if (odds > evens) {
         odds -= evens;
         maxgroups += (2 * evens);
-        if(odds % 3 == 2){
+        if (odds % 3 == 2) {
             addmore = (2 * odds - 1) / 3;
-        }
-        else if(odds % 3 == 0){
+        } else if (odds % 3 == 0) {
             addmore = (2 * odds) / 3;
-        }
-        else if(odds % 3 == 1){
+        } else if (odds % 3 == 1) {
             addmore = (2 * odds - 5) / 3;
         }
         maxgroups += addmore;
-    }
-    else if(evens > odds) {
+    } else if (evens > odds) {
         maxgroups += (2 * odds) + 1;
     }
 
